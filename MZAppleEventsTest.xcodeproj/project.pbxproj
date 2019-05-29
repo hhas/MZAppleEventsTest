@@ -10,9 +10,9 @@
 		4F2075D8229C87C900C16EF0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4F2075D7229C87C900C16EF0 /* Default-568h@2x.png */; };
 		4F649F3D229DE49200A0E8B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F649F3B229DE49200A0E8B9 /* Foundation.framework */; };
 		4F649F3E229DE49200A0E8B9 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F649F3C229DE49200A0E8B9 /* CoreFoundation.framework */; };
-		4F649F3F229DE49B00A0E8B9 /* MZAppleEvents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F649F36229DE47B00A0E8B9 /* MZAppleEvents.framework */; };
-		4F649F44229DE63100A0E8B9 /* MZAppleEvents.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4F649F36229DE47B00A0E8B9 /* MZAppleEvents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4F649F45229DE63100A0E8B9 /* MZCarbonShim.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4F649F38229DE47B00A0E8B9 /* MZCarbonShim.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4F649F5D229E7F4500A0E8B9 /* MZAppleEvents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F649F58229E7F0300A0E8B9 /* MZAppleEvents.framework */; };
+		4F649F60229E7FFD00A0E8B9 /* MZAppleEvents.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4F649F58229E7F0300A0E8B9 /* MZAppleEvents.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4F649F61229E7FFD00A0E8B9 /* MZCarbonShim.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4F649F5A229E7F0300A0E8B9 /* MZCarbonShim.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F481D3682112C09600F7038D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F481D3672112C09600F7038D /* AppDelegate.swift */; };
 		F481D36A2112C09600F7038D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F481D3692112C09600F7038D /* ViewController.swift */; };
 		F481D36D2112C09600F7038D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F481D36B2112C09600F7038D /* Main.storyboard */; };
@@ -21,51 +21,51 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4F649F2D229DE47B00A0E8B9 /* PBXContainerItemProxy */ = {
+		4F649F4F229E7F0300A0E8B9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 4F649F24229DE47B00A0E8B9 /* AppleEvents.xcodeproj */;
+			containerPortal = 4F649F46229E7F0200A0E8B9 /* AppleEvents.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 4F1EA99B22835040000E0A3A;
 			remoteInfo = AppleEvents;
 		};
-		4F649F2F229DE47B00A0E8B9 /* PBXContainerItemProxy */ = {
+		4F649F51229E7F0300A0E8B9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 4F649F24229DE47B00A0E8B9 /* AppleEvents.xcodeproj */;
+			containerPortal = 4F649F46229E7F0200A0E8B9 /* AppleEvents.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 4F21AF1F22861C7500A1B978;
 			remoteInfo = libAppleEvents;
 		};
-		4F649F31229DE47B00A0E8B9 /* PBXContainerItemProxy */ = {
+		4F649F53229E7F0300A0E8B9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 4F649F24229DE47B00A0E8B9 /* AppleEvents.xcodeproj */;
+			containerPortal = 4F649F46229E7F0200A0E8B9 /* AppleEvents.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 4F1EA9C822835239000E0A3A;
 			remoteInfo = "test-send";
 		};
-		4F649F33229DE47B00A0E8B9 /* PBXContainerItemProxy */ = {
+		4F649F55229E7F0300A0E8B9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 4F649F24229DE47B00A0E8B9 /* AppleEvents.xcodeproj */;
+			containerPortal = 4F649F46229E7F0200A0E8B9 /* AppleEvents.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 4FD23EB6229A8770006792A7;
 			remoteInfo = "test-receive";
 		};
-		4F649F35229DE47B00A0E8B9 /* PBXContainerItemProxy */ = {
+		4F649F57229E7F0300A0E8B9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 4F649F24229DE47B00A0E8B9 /* AppleEvents.xcodeproj */;
+			containerPortal = 4F649F46229E7F0200A0E8B9 /* AppleEvents.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 4F081B72229BDD1A00B2004B;
 			remoteInfo = MZAppleEvents;
 		};
-		4F649F37229DE47B00A0E8B9 /* PBXContainerItemProxy */ = {
+		4F649F59229E7F0300A0E8B9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 4F649F24229DE47B00A0E8B9 /* AppleEvents.xcodeproj */;
+			containerPortal = 4F649F46229E7F0200A0E8B9 /* AppleEvents.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 4F081BEB229BEAB100B2004B;
 			remoteInfo = MZCarbonShim;
 		};
-		4F649F39229DE48A00A0E8B9 /* PBXContainerItemProxy */ = {
+		4F649F5B229E7F3F00A0E8B9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 4F649F24229DE47B00A0E8B9 /* AppleEvents.xcodeproj */;
+			containerPortal = 4F649F46229E7F0200A0E8B9 /* AppleEvents.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 4F081B71229BDD1A00B2004B;
 			remoteInfo = MZAppleEvents;
@@ -79,8 +79,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				4F649F44229DE63100A0E8B9 /* MZAppleEvents.framework in CopyFiles */,
-				4F649F45229DE63100A0E8B9 /* MZCarbonShim.framework in CopyFiles */,
+				4F649F60229E7FFD00A0E8B9 /* MZAppleEvents.framework in CopyFiles */,
+				4F649F61229E7FFD00A0E8B9 /* MZCarbonShim.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,9 +88,10 @@
 
 /* Begin PBXFileReference section */
 		4F2075D7229C87C900C16EF0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		4F649F24229DE47B00A0E8B9 /* AppleEvents.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AppleEvents.xcodeproj; path = ../AppleEventDescriptor/AppleEvents.xcodeproj; sourceTree = "<group>"; };
 		4F649F3B229DE49200A0E8B9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4F649F3C229DE49200A0E8B9 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		4F649F46229E7F0200A0E8B9 /* AppleEvents.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AppleEvents.xcodeproj; path = ../AppleEvents/AppleEvents.xcodeproj; sourceTree = "<group>"; };
+		4F649F5E229E7F5900A0E8B9 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		F481D3642112C09600F7038D /* MZAppleEventsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MZAppleEventsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F481D3672112C09600F7038D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F481D3692112C09600F7038D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,7 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F649F3F229DE49B00A0E8B9 /* MZAppleEvents.framework in Frameworks */,
+				4F649F5D229E7F4500A0E8B9 /* MZAppleEvents.framework in Frameworks */,
 				4F649F3D229DE49200A0E8B9 /* Foundation.framework in Frameworks */,
 				4F649F3E229DE49200A0E8B9 /* CoreFoundation.framework in Frameworks */,
 			);
@@ -117,21 +118,22 @@
 		4F25F958229BF75400AD5387 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4F649F5E229E7F5900A0E8B9 /* CoreServices.framework */,
 				4F649F3C229DE49200A0E8B9 /* CoreFoundation.framework */,
 				4F649F3B229DE49200A0E8B9 /* Foundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4F649F25229DE47B00A0E8B9 /* Products */ = {
+		4F649F47229E7F0200A0E8B9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4F649F2E229DE47B00A0E8B9 /* AppleEvents.framework */,
-				4F649F30229DE47B00A0E8B9 /* libAppleEvents.a */,
-				4F649F32229DE47B00A0E8B9 /* test-send */,
-				4F649F34229DE47B00A0E8B9 /* test-receive */,
-				4F649F36229DE47B00A0E8B9 /* MZAppleEvents.framework */,
-				4F649F38229DE47B00A0E8B9 /* MZCarbonShim.framework */,
+				4F649F50229E7F0300A0E8B9 /* AppleEvents.framework */,
+				4F649F52229E7F0300A0E8B9 /* libAppleEvents.a */,
+				4F649F54229E7F0300A0E8B9 /* test-send */,
+				4F649F56229E7F0300A0E8B9 /* test-receive */,
+				4F649F58229E7F0300A0E8B9 /* MZAppleEvents.framework */,
+				4F649F5A229E7F0300A0E8B9 /* MZCarbonShim.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,7 +141,7 @@
 		F481D35B2112C09600F7038D = {
 			isa = PBXGroup;
 			children = (
-				4F649F24229DE47B00A0E8B9 /* AppleEvents.xcodeproj */,
+				4F649F46229E7F0200A0E8B9 /* AppleEvents.xcodeproj */,
 				F481D3662112C09600F7038D /* MZAppleEventsTest */,
 				F481D3652112C09600F7038D /* Products */,
 				4F25F958229BF75400AD5387 /* Frameworks */,
@@ -183,7 +185,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				4F649F3A229DE48A00A0E8B9 /* PBXTargetDependency */,
+				4F649F5C229E7F3F00A0E8B9 /* PBXTargetDependency */,
 			);
 			name = MZAppleEventsTest;
 			productName = HelloWorld;
@@ -219,8 +221,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 4F649F25229DE47B00A0E8B9 /* Products */;
-					ProjectRef = 4F649F24229DE47B00A0E8B9 /* AppleEvents.xcodeproj */;
+					ProductGroup = 4F649F47229E7F0200A0E8B9 /* Products */;
+					ProjectRef = 4F649F46229E7F0200A0E8B9 /* AppleEvents.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -231,46 +233,46 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		4F649F2E229DE47B00A0E8B9 /* AppleEvents.framework */ = {
+		4F649F50229E7F0300A0E8B9 /* AppleEvents.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = AppleEvents.framework;
-			remoteRef = 4F649F2D229DE47B00A0E8B9 /* PBXContainerItemProxy */;
+			remoteRef = 4F649F4F229E7F0300A0E8B9 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		4F649F30229DE47B00A0E8B9 /* libAppleEvents.a */ = {
+		4F649F52229E7F0300A0E8B9 /* libAppleEvents.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libAppleEvents.a;
-			remoteRef = 4F649F2F229DE47B00A0E8B9 /* PBXContainerItemProxy */;
+			remoteRef = 4F649F51229E7F0300A0E8B9 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		4F649F32229DE47B00A0E8B9 /* test-send */ = {
+		4F649F54229E7F0300A0E8B9 /* test-send */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.executable";
 			path = "test-send";
-			remoteRef = 4F649F31229DE47B00A0E8B9 /* PBXContainerItemProxy */;
+			remoteRef = 4F649F53229E7F0300A0E8B9 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		4F649F34229DE47B00A0E8B9 /* test-receive */ = {
+		4F649F56229E7F0300A0E8B9 /* test-receive */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.executable";
 			path = "test-receive";
-			remoteRef = 4F649F33229DE47B00A0E8B9 /* PBXContainerItemProxy */;
+			remoteRef = 4F649F55229E7F0300A0E8B9 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		4F649F36229DE47B00A0E8B9 /* MZAppleEvents.framework */ = {
+		4F649F58229E7F0300A0E8B9 /* MZAppleEvents.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = MZAppleEvents.framework;
-			remoteRef = 4F649F35229DE47B00A0E8B9 /* PBXContainerItemProxy */;
+			remoteRef = 4F649F57229E7F0300A0E8B9 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		4F649F38229DE47B00A0E8B9 /* MZCarbonShim.framework */ = {
+		4F649F5A229E7F0300A0E8B9 /* MZCarbonShim.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = MZCarbonShim.framework;
-			remoteRef = 4F649F37229DE47B00A0E8B9 /* PBXContainerItemProxy */;
+			remoteRef = 4F649F59229E7F0300A0E8B9 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -302,10 +304,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4F649F3A229DE48A00A0E8B9 /* PBXTargetDependency */ = {
+		4F649F5C229E7F3F00A0E8B9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MZAppleEvents;
-			targetProxy = 4F649F39229DE48A00A0E8B9 /* PBXContainerItemProxy */;
+			targetProxy = 4F649F5B229E7F3F00A0E8B9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -456,6 +458,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "-headerpad_max_install_names";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.nuggle.MSAppleEventsTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -474,6 +478,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "-headerpad_max_install_names";
 				PRODUCT_BUNDLE_IDENTIFIER = uk.nuggle.MSAppleEventsTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
