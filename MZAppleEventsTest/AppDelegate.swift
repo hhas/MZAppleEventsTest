@@ -6,6 +6,26 @@ import UIKit
 import MZAppleEvents
 
 
+struct StderrStream: TextOutputStream {
+    public mutating func write(_ string: String) { fputs(string, stderr) }
+}
+var errStream = StderrStream()
+
+
+/*
+
+<key>com.apple.security.scripting-targets</key>
+<dict>
+    <key>com.apple.iTunes</key>
+    <array>
+        <string>com.apple.iTunes.playback</string>
+    </array>
+</dict>
+
+*/
+
+
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
@@ -16,13 +36,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         appleEventHandlers[coreEventGetData] = { (event: AppleEventDescriptor) throws -> Descriptor? in
             guard let desc = event.parameter(keyDirectObject) else { throw AppleEventError.missingParameter }
-            print("coreEventGetData:", desc)
+            print("coreEventGetData:", desc, to: &errStream)
             return packAsString("coreEventGetData: \(desc)")
         }
         
-        // TO DO:
-        //let source = CFMachPortCreateRunLoopSource(nil, AppleEvents.createMachPort(), 1)
-        //CFRunLoopAddSource(CFRunLoopGetCurrent(), source, .commonModes)
+        defaultEventHandler = { (event: AppleEventDescriptor) throws -> Descriptor? in
+            print("defaultEventHandler:", event, to: &errStream)
+            return nil
+        }
+        
+        let source = CFMachPortCreateRunLoopSource(nil, MZAppleEvents.createMachPort(), 1)
+        CFRunLoopAddSource(CFRunLoopGetCurrent(), source, .commonModes)
         
         return true
     }

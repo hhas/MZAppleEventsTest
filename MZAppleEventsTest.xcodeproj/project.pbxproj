@@ -92,6 +92,7 @@
 		4F649F3C229DE49200A0E8B9 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		4F649F46229E7F0200A0E8B9 /* AppleEvents.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AppleEvents.xcodeproj; path = ../AppleEvents/AppleEvents.xcodeproj; sourceTree = "<group>"; };
 		4F649F5E229E7F5900A0E8B9 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		4FA17ED6229FED8100CAC88A /* MZAppleEventsTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MZAppleEventsTest.entitlements; sourceTree = "<group>"; };
 		F481D3642112C09600F7038D /* MZAppleEventsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MZAppleEventsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F481D3672112C09600F7038D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F481D3692112C09600F7038D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -159,6 +160,7 @@
 		F481D3662112C09600F7038D /* MZAppleEventsTest */ = {
 			isa = PBXGroup;
 			children = (
+				4FA17ED6229FED8100CAC88A /* MZAppleEventsTest.entitlements */,
 				F481D3672112C09600F7038D /* AppDelegate.swift */,
 				F481D3692112C09600F7038D /* ViewController.swift */,
 				F481D36B2112C09600F7038D /* Main.storyboard */,
@@ -205,6 +207,14 @@
 					F481D3632112C09600F7038D = {
 						CreatedOnToolsVersion = 10.0;
 						LastSwiftMigration = 1020;
+						SystemCapabilities = {
+							com.apple.ClassKit = {
+								enabled = 0;
+							};
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};

@@ -14,7 +14,7 @@ class ViewController: UIViewController {
 
     @IBAction func playTrack(sender: UIButton) {
         
-        // TO DO: why is this throwing errAEDescNotFound (-1701) in iOSMac but not macOS
+        // TO DO: why is this throwing errAEDescNotFound (-1701) in iOSMac but not macOS (answer: cos Swift's C interop is busted under iOSMac: returning an AEDesc struct by value loses its data handle; for now, workaround is to to return AEDesc by reference via inout parameter instead)
         
         var message: String = ""
         /*
@@ -36,7 +36,7 @@ class ViewController: UIViewController {
             var event = AppleEventDescriptor(code: coreEventGetData, target: itunes) // get
             event.setParameter(keyDirectObject, to: RootSpecifierDescriptor.app.property(0x7054726b).property(0x706e616d)) // name of current track
             let (err, reply) = event.send()
-            print("get", err, reply?.parameters as Any)
+            print("get", err, reply?.parameters as Any, to: &errStream)
             if (reply?.errorNumber ?? err) == 0 {
                 if let desc = reply?.parameter(keyAEResult), let result = try? unpackAsString(desc) {
                     message += "iTunes now playing: \(result)"
